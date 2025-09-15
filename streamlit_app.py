@@ -61,10 +61,13 @@ with cols[3]:
 with st.expander("API keys (optional fallback)"):
     serpapi_key_ui = st.text_input("SerpAPI API key", value=SERPAPI_KEY, type="password")
     hunter_key_ui = st.text_input("Hunter.io API key", value=HUNTER_API_KEY, type="password")
+    open_ai_ui = st.text_input("Open AI key API key", value=OPENAI_API_KEY, type="password")
     if serpapi_key_ui:
         SERPAPI_KEY = serpapi_key_ui.strip()
     if hunter_key_ui:
         HUNTER_API_KEY = hunter_key_ui.strip()
+    if open_ai_ui:
+        OPENAI_API_KEY =  open_ai_ui.strip()
 
 debug = st.checkbox("Show debug details", value=False)
 
