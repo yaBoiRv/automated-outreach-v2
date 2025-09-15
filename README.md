@@ -12,11 +12,16 @@
 1. Install python.
 2. Windows: .venv\Scripts\activate
 3. pip install -r requirements.txt
+4. In Command Prompt:
+   set SERPAPI_KEY=your-serpapi-key-here
+   set HUNTER_API_KEY=your-hunter-key-here
+   set OPENAI_API_KEY=your-openai-key-here
+   streamlit run streamlit_app.py
+And in the streamlit_app.py(OPTIONAL): 
+  SERPAPI_KEY = os.getenv("SERPAPI_KEY") or st.secrets.get("SERPAPI_KEY", "")
+  HUNTER_API_KEY = os.getenv("HUNTER_API_KEY") or st.secrets.get("HUNTER_API_KEY", "")
+  OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY", "")
 
-## Environment variables
-export SERPAPI_KEY=your_serpapi_key
-export HUNTER_API_KEY=your_hunter_key # optional
-export OPENAI_API_KEY=your_openai_key # optional (not required)
 
 ## Run
 streamlit run streamlit_app.py
