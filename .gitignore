@@ -1,0 +1,17 @@
+# Python / venv
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local env & secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# App outputs
+prospects.csv
+*.xlsx

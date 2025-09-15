@@ -1,0 +1,8 @@
+streamlit
+requests
+beautifulsoup4
+tldextract
+pandas
+openpyxl
+gspread
+google-auth     
