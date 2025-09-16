@@ -24,7 +24,8 @@ And in the streamlit_app.py(OPTIONAL):
 
 
 ## Run
-streamlit run streamlit_app.py
+1. Activate venv: .venv\Scripts\Activate
+2. streamlit run streamlit_app.py
 
 ## Google Sheets (optional)
 `- Create a Service Account in Google Cloud, enable Sheets API.
